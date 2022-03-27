@@ -1,0 +1,363 @@
+:root {
+  --background-color: #f6e7d8;
+  --button-color: #874356; /*main color*/
+  --sales-button-color:rgb(8, 223, 8);
+  --link-color: #874356;
+  --link-color-hoover: #f68989;
+  --button-color-hover: #c65d7b;
+  --our-general-fonts: #333;
+}
+/* Resetter */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*General*/
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--background-color, white);
+  font-family: poppins, sans-serif;
+  color: var(--our-general-fonts);
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-color-hoover);
+}
+.acento{
+  color:var(--button-color);
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px;
+}
+
+/* ********************
+        Encabezado 
+   ******************** */
+.header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+  margin:10px;
+}
+.header h1 {
+  margin: 20px;
+}
+/* ********************
+    Barra de Navegación 
+   ******************** */
+.nav {
+  /* background-color:#777; */
+  display: flex;
+  justify-content: center;
+}
+
+.nav a {
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--button-color);
+  color: var(--background-color);
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 20px;
+  margin: 10px;
+}
+.nav a:hover {
+  background-color: var(--button-color-hover);
+}
+
+/* ********************
+     Seccion de Banner
+   ******************** */
+.cook {
+  background-color: #f6e7d8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23f68989' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  height: 400px;
+}
+.cook-container{ 
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    width:1200px;
+    padding:20px;
+    height: 400px;
+    
+}
+.cook-img{
+    margin:20px;
+}
+.cook-img img{
+    /* width: 250px; */
+    width: auto;
+    height:150px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.cook-welcome{
+    width: 300px;
+}
+   /* Component Cook Button */
+   .cook .button {
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--button-color);
+    color: var(--background-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 30px;
+    margin:10px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  .cook .button:hover {
+    transform: scale(0.98);
+    -webkit-transform: scale(0.90);
+    -moz-transform: scale(0.90);
+    -ms-transform: scale(0.90);
+    -o-transform: scale(0.90);
+  }
+
+/* ********************
+     Seccion de why
+   ******************** */
+.why{
+    /* background-color:red; */
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+.why .why-text{
+    width: 200px;
+    margin: 20px;
+}
+.why img{
+ border-radius: 5px;
+ width: 200px;
+ margin: 10px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+}
+/* ********************
+     Seccion de Curso
+   ******************** */
+.course{
+      /* background-color:red; */
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content:center;
+
+}
+.course .course-text{
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+}
+.course img{
+  width: 200px;
+ margin: 10px;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+/* ********************
+     Seccion de Testimonios
+   ******************** */
+   .testimony{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+   }
+   .card-container{ 
+     display: flex;
+     align-items: center;
+     justify-content:center;
+   }
+   .card{
+     width: 130px;
+     height: 300px;
+     padding:10px;
+     margin: 10px;
+     align-items: center;
+     justify-content:center;
+     background-color:var(--link-color);
+     border-radius:5px;
+     -webkit-border-radius:5px;
+     -moz-border-radius:5px;
+     -ms-border-radius:5px;
+     -o-border-radius:5px;
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+   .card .img-card{
+     background-color: var(--background-color);
+     width: 70px;
+     margin: 10px;
+     border-radius:50px;
+     -webkit-border-radius:50px;
+     -moz-border-radius:50px;
+     -ms-border-radius:50px;
+     -o-border-radius:50px;
+}
+.card .card-text{
+  color: black;
+  display:flex;
+  flex-direction: column;
+   align-items: center;
+   justify-content:center;
+}
+/* ********************
+     Seccion de Oferta Valor
+   ******************** */
+   .oferta{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+   }
+   .oferta .img-oferta{
+    background-color: var(--background-color);
+    width: 350px;
+    height:auto;
+    margin: 10px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+   }
+
+   /* Component Button */
+   .oferta .button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--sales-button-color);
+  color: var(--background-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px 30px;
+  margin:10px;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.oferta .button:hover {
+  color: var(--background-color);
+  transform: scale(0.98);
+  -webkit-transform: scale(0.90);
+  -moz-transform: scale(0.90);
+  -ms-transform: scale(0.90);
+  -o-transform: scale(0.90);
+}
+.footer{
+  background-color: var(--our-general-fonts);
+  color: var(--background-color);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+}
+.footer .footer-content{
+  /* background-color:greenyellow; */
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  
+}
+.footer .social{
+  /* background-color:red; */
+  width: 300px;
+  display:flex;
+  margin: 10px;
+  padding: 20px;
+  justify-content:space-between;
+}
+.img-social{
+  width: 40px;
+  height: auto;
+}
+
+@media screen and (min-width:720px) {
+
+  .header,
+  .cook-container,
+  .why,
+  .course,
+  .oferta,
+  .footer{
+    flex-direction: row;
+    justify-content:space-evenly;
+  } 
+  .cook-img img{
+    width: 250px;
+    height:auto;
+}
+.why img{
+  width: 250px;
+ }
+
+ .course img{
+  width: 250px;
+ }
+.card{
+  width: 180px;
+  height: 300px;
+}
+.oferta p{
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+}
+}

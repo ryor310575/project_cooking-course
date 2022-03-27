@@ -1,80 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>ProgramaYa!</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <p class="logo">ProgramaYa!</p>
-            <nav>
-                <a href="#somos-proya">Quienes Somos</a>
-                <a href="#nuestros-programas">Nuestros Programas</a>
-                <a href="#caracteristicas">Características</a>
-            </nav>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style-index.css" />
+    <title>Aprende a Cocinar</title>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header class="header container">
+      <div>
+        <img
+        src="/img/kisspng-kitchen-utensil-logo.png"
+        alt="Logo escuela de ocina"
+      />
+      <h1>Escuela de Cocina</h1>
+      </div>
+
+          <!-- Barra de Navegación -->
+    <nav class="nav">
+
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Nuestros Cursos</a>
+        <a href="#">Recetas</a>
+
+    </nav>
     </header>
-
-    <section id="hero">
-        <h1>Aprendé a Programar <br>con los Mejores</h1>
-        <button>APLICÁ YA!</button>
-    </section>
-
-    <section id="somos-proya">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-
-                <h2>Somos <span class="color-acento">ProgramaYa!</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+    <!-- Contenido Principal -->
+    <main class="main">
+      <!-- Banner Principal -->
+      <section class="cook">
+        <div class="cook-container">
+          <div class="cook-img">
+            <img
+              src="/img/IMG_1_stock-photo-middle-aged-woman-chef.webp"
+              alt="Propuetaria escuela de Cocina"
+            />
+          </div>
+          <div class="cook-welcome">
+            <h2>Aprende a Cocinar</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam blanditiis ipsa debitis iure dolorem vitae!
+            </p>
+            <a href="#" class="button">Empieza Ya!</a>
+          </div>
+        </div>
+      </section>
+      <!-- Seccion de Porque -->
+      <section>
+        <div class="why container">
+          <div class="why-text">
+            <h2>¿Por que?</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              dolore! Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Libero officia veritatis, vitae
+              laudantium veniam ex molestias ea
+            </p>
+          </div>
+          <img
+            src="/img/IMG_2_restaurant-hague-good-food-thumbnail.jpg"
+            alt="Cocina restaurant"
+          />
+        </div>
+      </section>
+      <!-- Seccion de Oferta de Valor -->
+      <section class="course container">
+        <div class="course-text">
+          <h2>Nuestro <spam class="acento">Extraordinario</spam> curso</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
+            mollitia.
+          </p>
+          <ol>
+            <li>Introduccion</li>
+            <li>Principios</li>
+            <li>Los Alimentos</li>
+            <li>Metodos</li>
+            <li>Preparaciones</li>
+          </ol>
+        </div>
+        <img
+          src="/img/IMG_3_bakery-baked-cupcake-cake-thumbnail.jpg"
+          alt="Foto Curso"
+        />
+      </section>
+      <!-- Seccion de testimonios -->
+      <section class="testimony container">
+        <h2>Nuestros Alumnos</h2>
+        <div class="card-container">
+          
+          <article class="card">
+            <img
+              class="img-card"
+              src="/img/PIC_4_Miguel.png"
+              alt="Foto Alejandro"
+            />
+            <div class="card-text">
+              <h3>Alejandro Fernandes</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum,
+                ab!
+              </p>
             </div>
-        </div>
-    </section>
-
-    <section id="nuestros-programas">
-        <div class="container">
-            <h2>Nuestros Programas</h2>
-            <div class="programas">
-                <div class="carta">
-                    <h3>Programador Front-end</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
-                    <button>+ Info</button>
-                </div>
-                <div class="carta">
-                    <h3>Programador Full-Stack</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
-                    <button>+ Info</button>
-                </div>
-                <div class="carta">
-                    <h3>Programador Python</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
-                    <button>+ Info</button>
-                </div>  
+          </article>
+          <article class="card">
+            <img
+              class="img-card"
+              src="/img/PIC_2_Martha.png"
+              alt="Foto Martha"
+            />
+            <div class="card-text">
+              <h3>Marta Sanchez</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum,
+                ab!
+              </p>
             </div>
+          </article>
+          <article class="card">
+            <img class="img-card" src="/img/PIC_3_Amaia.png" alt="" />
+            <div class="card-text">
+              <h3>Amaia Montero</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum,
+                ab!
+              </p>
+            </div>
+          </article>
         </div>
-    </section>
-
-    <section id="caracteristicas">
-        <div class="container">
-            <ul>
-                <li>✔️ 100% online</li>
-                <li>✔️ Flexibilidad de horarios</li>
-                <li>✔️ Soporte 1:1</li>
-                <li>✔️ Asistencia financiera</li>
-            </ul>
+      </section>
+      <!-- Seccion para aplicar -->
+      <section class="oferta container">
+        <img
+          class="img-oferta"
+          src="/img/IMG_8_cooking-team.jpeg"
+          alt="Propuetaria escuela de Cocina"
+        />
+        <div>
+          <h2>Tu <span class="acento">Oportunidad</span> Ahora</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            blanditiis ipsa debitis iure dolorem vitae!
+          </p>
+          <a href="#" class="button">APLICAR</a>
         </div>
-    </section>
-
-    <section id="final">
-        <h2>Listo para programar?</h2>
-        <button>APLICÁ YA!</button>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; ProgramaYa 2021</p>
-        </div>
+      </section>
+      <aside></aside>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Direccion</h2>
+        <p>
+          Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Consequatur, doloribus.
+        </p>
+      </div>
+      <div class="footer-content">
+        <h2>Contactos</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <figure>
+          <a href="#"><img class="img-social" src="/img/social/email_icon.png" alt="Email"> </a>
+          <figcaption>E-MAIL</figcaption>
+        </figure>
+        
+      </div>
+      <div class="footer-content">
+        <h2>Aliados</h2>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit.</li>
+        </ul>
+      </div>
+      <div class="social">
+        <figure>
+          <a href="">
+            <img class="img-social" src="/img/social/facebook_icon.png"
+            alt="Facebook">
+          </a>
+          <figcaption>Facebook</figcaption>
+        </figure>
+        <figure>
+          <a href="#"> <img class="img-social" src="/img/social/twitter_icon.png" alt="Twitter"> </a>
+          <figcaption>Twitter</figcaption>
+        </figure>
+        <figure>
+          <a href="#"> <img class="img-social" src="/img/social/instagram_icon.png" alt="Instagram"> </a>
+          <figcaption>Instagram</figcaption>
+        </figure>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
